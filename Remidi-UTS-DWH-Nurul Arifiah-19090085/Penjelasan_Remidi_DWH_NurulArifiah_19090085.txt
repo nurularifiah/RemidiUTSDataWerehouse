@@ -1,0 +1,21 @@
+Nama : Nurul Arifiah Gunarsih
+Kelas : 5B
+Remidi UTS Data Werehouse
+------------------------------
+Data Werehouse merupakan sebuah sistem komputer yang bertugas untuk mengarsipkan dan menganalisis sebuah data historis 
+untuk keperluan suatu organisasi atau bisnis tertentu.
+1. Langkah pertama yang akan kita lakukan yaitu meng import database ClassicModel ke dalam localhost
+2. Selanjutnya desain database sesuai dengan kebutuhan yang diingingkan, ada beberapa tabel dimensi yang dibuat yaitu :
+- Tabel dimensi product, data ini mengambil data dari tabel product berupa product Name, product Code, Product Line, quantityInStock, quantityOrder
+- Tabel dimensi employess, data ini mengambil data dari tabel employess berupa employeeNumber, firstName, lastName, jobTitle, city, country
+- Tabel dimensi customers, data ini mengambil data dari tabel customers berupa customerNumber, customerName, city, country
+- Tabel dimensi waktu/time, data ini membuat data dari tabel time berupa data id, bulan, tahun dan tanggal
+- Tabel dimensi fakta, pada bagian ini menggabungkan semua tabel dimensi yang telah dibuat
+3. Setelah itu membuat database desain dimensi yang telah dibuat di localhost
+4. Selanjutnya import database dan buat transformation mengacu pada data desain dimensi yang dibuat, yaitu :
+- trans_customers
+- trans_employess
+- trans_product
+- trans_time
+- fact
+  
